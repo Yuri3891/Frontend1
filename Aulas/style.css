@@ -28,6 +28,15 @@ footer{
      color: #777; 
 }
 
+/*Formatação genérica para os links */
+a{
+     text-decoration: none;             /*retirar o sublinhado dos links*/
+     color: #492291               /*alterar a cor dos links*/
+}
+a:hover{
+     text-decoration: underline;        /*volta o sublinhado quando passar o mouse em cima*/
+}
+
 /*formatação da home*/
 
 main{
@@ -134,4 +143,34 @@ h1{
      }
 
      }
+     /*link voltar do rodapé das páginas*/
+     .voltar{
+          text-align: center;
+          margin-top: 20px;
+     }
 
+
+     /*formatação do grid de clínica*/
+     .grid-clínica{
+          display: flex;                          /*opção por layout em grid (grade). O padrão para o display block */
+          justify-content: space-between;         /*alinha pelas margens externas(direita e esquerda)*/
+          gap: 1.5rem;
+          div{
+               flex-grow: 1;                      /*permite expandir a largura*/
+               flex-shrink: 1;                    /*permiti reduzir a largura*/
+               flex-basis: 300px;                 /*tamanho inicial*/
+          }
+          img{
+               width: 100%;                       /*imagem responsiva*/
+          }
+          h2{
+               text-align: start;                 /*alinha à esquerda*/
+               margin-bottom: 15px;
+               margin-top: 0px;
+          }
+          p{
+               line-height: 150%;                 /*altura da linha ou espaçamento entre linhas*/
+               margin-bottom: 15px;               /*margem superior*/
+               
+          }
+     }
