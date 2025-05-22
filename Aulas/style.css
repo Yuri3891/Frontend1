@@ -88,7 +88,7 @@ h1{
      /*0:deslocamento horizontal, 3px vertical,10px:desfoque, rgba:cor*/
      box-shadow: 0 4px 10px rgba(0,0,0, 0.1);
      padding-bottom: 15px;         /*margem interna*/
-     border-radius: 10px;          /*Catos arredondados*/
+     border-radius: 20px;          /*Catos arredondados*/
      text-align: center;
      img{
           width: 100%;             /*fixa  a largura proporcional*/
@@ -173,4 +173,28 @@ h1{
                margin-bottom: 15px;               /*margem superior*/
                
           }
+          ul,ol{
+               padding-left: 20px;
+               list-style: square;
+               li{
+                    line-height: 170%;
+               }
+          }
+        
+     }
+
+     .grid-Especialidades{
+     display: flex;            
+     flex-wrap: wrap;          
+     gap: 25px;             
+     *{
+          flex-basis:350px;   
+          flex-grow: 1;        
+          flex-shrink: 1;      
+     }
+     a{
+          text-decoration: none;   /*tirar o sublinhado*/
+          color: #000    ;
+     }
+     
      }
